@@ -1,0 +1,134 @@
+sources:
+  - page_type: amc
+    title: HDFC Mutual Fund
+    url: https://groww.in/mutual-funds/amc/hdfc-mutual-funds
+  - page_type: large_cap
+    title: HDFC Large Cap Fund Direct Growth
+    url: https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth
+  - page_type: flexi_cap
+    title: HDFC Flexi Cap Direct Plan Growth
+    url: https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth
+  - page_type: elss
+    title: HDFC ELSS Tax Saver Fund Direct Plan Growth
+    url: https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth
+  - page_type: mid_cap
+    title: HDFC Mid Cap Fund Direct Growth
+    url: https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth
+
+chunk:
+  strategy: section_aware
+  size: 800
+  overlap: 80
+
+embedding:
+  model: sentence-transformers/all-MiniLM-L6-v2
+
+qdrant:
+  # local = embedded Qdrant at `path` (no server required)
+  # server = Qdrant service at `url` (supports concurrent readers/writers)
+  mode: local
+  path: data/qdrant
+  url: http://localhost:6333
+  api_key: ""
+  collection: mf_faq
+
+retrieval:
+  top_k: 4
+  min_score: 0.25
+
+llm:
+  provider: groq
+
+paths:
+  raw_dir: data/raw
+  loaded_dir: data/loaded
+  chunks_path: data/chunks/chunks.jsonl
+  embeddings_manifest: data/embeddings/manifest.json
+  retrieval_dir: data/retrieval
+
+links:
+  factsheet: https://www.hdfcfund.com/investor-services/fund-documents
+  education: https://www.amfiindia.com/investor-corner
+  statements_help: https://groww.in/help
+
+ui:
+  welcome: Ask factual questions about selected HDFC Mutual Fund schemes on Groww public pages.
+  disclaimer: Facts-only. No investment advice.
+  examples:
+    - What is the expense ratio of HDFC Large Cap Fund Direct Growth?
+    - What is the lock-in for HDFC ELSS Tax Saver?
+    - What is the minimum SIP for HDFC Mid Cap Fund Direct Growth?
+
+scope:
+  # Named schemes/AMCs that are deliberately outside the five ingested pages.
+  # If a question names one of these, the assistant says it is not in the corpus.
+  out_of_scope_aliases:
+    - sbi
+    - icici
+    - axis
+    - kotak
+    - nippon
+    - parag parikh
+    - mirae
+    - quant
+    - dsp
+    - franklin
+    - aditya birla
+    - tata
+    - uti
+    - canara robeco
+    - idfc
+    - hsbc
+    - bandhan
+    - invesco
+    - motilal oswal
+    - navi
+    - pgim
+    - sundaram
+    - union mutual fund
+    - baroda bnp
+    - bajaj finserv
+    - edelweiss
+    - lic mutual fund
+    - mahindra manulife
+    - samco
+    - taurus
+    - quantum
+    - zerodha
+    - jio blackrock
+    - whiteoak
+    - helios
+    - old bridge
+    - hdfc small cap
+    - hdfc multi cap
+    - hdfc large & mid cap
+    - hdfc large and mid cap
+    - hdfc gold
+    - hdfc liquid
+    - hdfc balanced advantage
+    - hdfc focused
+    - hdfc value fund
+    - hdfc infrastructure
+    - hdfc corporate bond
+    - hdfc children
+    - hdfc defence
+    - hdfc technology
+
+scheme_aliases:
+  amc:
+    - hdfc mutual fund
+    - hdfc amc
+  large_cap:
+    - large cap
+    - hdfc large cap
+  flexi_cap:
+    - flexi cap
+    - hdfc flexi
+    - hdfc equity fund
+  elss:
+    - elss
+    - tax saver
+    - hdfc elss
+  mid_cap:
+    - mid cap
+    - hdfc mid cap

@@ -1,0 +1,13 @@
+httpx
+beautifulsoup4
+lxml
+pyyaml
+python-dotenv
+sentence-transformers
+qdrant-client>=1.15,<2
+streamlit>=1.40,<2
+groq
+fastapi
+uvicorn
+pydantic
+pytest
