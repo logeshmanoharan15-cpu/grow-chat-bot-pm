@@ -1,0 +1,30 @@
+{
+  "backend": "qdrant",
+  "mode": "local",
+  "location": "/Users/logesh/Desktop/grow chat bot/chat bot /data/qdrant",
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "dim": 384,
+  "collection": "mf_faq",
+  "count": 18,
+  "ids": [
+    "amc-facts-001",
+    "amc-body-001",
+    "amc-body-002",
+    "amc-body-003",
+    "amc-body-004",
+    "amc-body-005",
+    "elss-facts-001",
+    "elss-body-001",
+    "elss-body-002",
+    "flexi_cap-facts-001",
+    "flexi_cap-body-001",
+    "flexi_cap-body-002",
+    "large_cap-facts-001",
+    "large_cap-body-001",
+    "large_cap-body-002",
+    "mid_cap-facts-001",
+    "mid_cap-body-001",
+    "mid_cap-body-002"
+  ],
+  "embedded_at": "2026-11-13T14:24:17.541293+00:00"
+}

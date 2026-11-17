@@ -1,0 +1,72 @@
+[
+  {
+    "page_type": "amc",
+    "source_url": "https://groww.in/mutual-funds/amc/hdfc-mutual-funds",
+    "fetched_at": "2026-11-10T17:59:43.039335+00:00",
+    "field_keys": [
+      "fund_house",
+      "amc_incorporation_date",
+      "sponsor",
+      "trustee",
+      "managing_director",
+      "total_aum"
+    ]
+  },
+  {
+    "page_type": "large_cap",
+    "source_url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
+    "fetched_at": "2026-11-10T17:59:44.221852+00:00",
+    "field_keys": [
+      "expense_ratio",
+      "exit_load",
+      "min_sip",
+      "riskometer",
+      "benchmark",
+      "fund_house",
+      "category"
+    ]
+  },
+  {
+    "page_type": "flexi_cap",
+    "source_url": "https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth",
+    "fetched_at": "2026-11-10T17:59:45.399071+00:00",
+    "field_keys": [
+      "expense_ratio",
+      "exit_load",
+      "min_sip",
+      "riskometer",
+      "benchmark",
+      "fund_house",
+      "category"
+    ]
+  },
+  {
+    "page_type": "elss",
+    "source_url": "https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth",
+    "fetched_at": "2026-11-10T17:59:46.630304+00:00",
+    "field_keys": [
+      "expense_ratio",
+      "exit_load",
+      "min_sip",
+      "lock_in",
+      "riskometer",
+      "benchmark",
+      "fund_house",
+      "category"
+    ]
+  },
+  {
+    "page_type": "mid_cap",
+    "source_url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
+    "fetched_at": "2026-11-10T17:59:47.826890+00:00",
+    "field_keys": [
+      "expense_ratio",
+      "exit_load",
+      "min_sip",
+      "riskometer",
+      "benchmark",
+      "fund_house",
+      "category"
+    ]
+  }
+]
